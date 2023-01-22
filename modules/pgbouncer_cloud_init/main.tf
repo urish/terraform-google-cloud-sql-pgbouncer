@@ -7,6 +7,8 @@ locals {
     {
       db_host            = var.database_host
       db_port            = var.database_port
+      db_user            = var.database_user
+      db_pass            = var.database_password
       listen_port        = var.listen_port
       auth_user          = var.auth_user
       auth_query         = var.auth_query

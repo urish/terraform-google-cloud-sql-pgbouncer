@@ -9,6 +9,16 @@ variable "database_port" {
   default     = 5432
 }
 
+variable "database_user" {
+  description = "Database user to connect for authentication"
+  type        = string
+}
+
+variable "database_password" {
+  description = "Password for the given `database_user`"
+  type        = string
+}
+
 variable "listen_port" {
   description = "The port used by PgBouncer to listen on."
   type        = number
